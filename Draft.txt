@@ -1,0 +1,35 @@
+void guessGame(int guessLimit) {
+    int secretNum = 1;
+    int index = 0;
+    int guessNum;
+
+    while(index < guessLimit) {
+        cout << "Enter your number: ";
+        cin >> guessNum;
+
+        if (guessNum == secretNum) {
+            cout << "U win";
+            break;
+        }
+        else {
+            index += 1;
+        }
+    }
+}
+double power(double base, int powerNum) {
+    double result = 1;
+    for (int i=0; i < powerNum; ++i) {
+        result = result * base;
+    }
+    return result;
+}
+template <typename T> T myMax(T x, T y) {
+    return (x > y) ? x : y;
+}
+namespace first {
+    int x = 1;
+}
+//using namespace first;
+double hypotenuse(double x, double y){
+    return sqrt(power(x, 2) + power(y, 2));
+}
