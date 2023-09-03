@@ -16,7 +16,7 @@ bool checkDraw(int player1, int NPC) {
     return player1 == NPC;
 }
 bool playerWin(int player1, int NPC) {
-    return (player1 == 3 && NPC == 1) || (player1 + 1 == NPC);
+    return (player1 == 3 && NPC == 1) || NPC != player1 + 1;
 }
 
 string npcChoice_as_Str(int RPC_as_Num) {
